@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block block-1">
+          <h1>Маракуя</h1>
+        </div>
+        <div class="block block-2">
+          <ul class="menu">
+            <li><a href="page1.html">1</a></li>
+            <li><a href="page2.html">2</a></li>
+            <li><a href="page3.html">3</a></li>
+          </ul>
+        </div>
+        <div class="block block-3">
+          <p>Користь Маракуї</p>
+        </div>
+        <div class="block block-4">
+          <p>Маракуя — це тропічний фрукт, багатий на корисні речовини, які сприяють зміцненню здоров’я. У ньому міститься велика кількість вітамінів A, C, а також антиоксидантів, які підтримують імунітет, покращують стан шкіри та захищають організм від дії вільних радикалів.
+
+            Маракуя багата на клітковину, що позитивно впливає на травлення та сприяє підтримці здорового рівня холестерину. Крім того, її споживання допомагає регулювати рівень цукру в крові, що робить фрукт корисним для людей з діабетом.
+            
+            Маракуя також є природним джерелом магнію, який сприяє розслабленню м’язів і нервової системи, покращуючи сон і зменшуючи рівень стресу. Цей фрукт — не лише смачний, але й чудовий вибір для підтримки загального здоров’я!</p>
+        </div>
+        <div class="block block-5">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugz8S-mbAFWra_todHlbdWYDBidsKKGBtjA&s" alt="">
+        </div>
+        <div class="block block-6">
+          <h1>Сторінка адаптована для мобільного телефону</h1>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-areas:
+      "block-1 block-1 block-1"
+      "block-2 block-3 block-3"
+      "block-2 block-4 block-5"
+      "block-6 block-6 block-6";
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #d4e8ff;
+}
+
+.block {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.block-1 {
+  grid-area: block-1;
+  background-color: #bfd7ff;
+  justify-content: start;
+}
+
+.block-2 {
+  grid-area: block-2;
+  background-color: #ffdfd5;
+}
+
+.block-3 {
+  grid-area: block-3;
+  background-color: #e9f7cf;
+}
+
+.block-4 {
+  grid-area: block-4;
+}
+
+.block-5 {
+  grid-area: block-5;
+  background-color: #ffdfd5;
+}
+
+.block-6 {
+  grid-area: block-6;
+  background-color: #bfd7ff;
+  justify-content: end;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+.menu li {
+  padding: 5px 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0078d7;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #0056a3;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "block-1"
+        "block-2"
+        "block-3"
+        "block-5"
+        "block-4"
+        "block-6";
+    height: auto;
+  }
+
+  .block {
+    padding: 20px;
+  }
+
+  .block img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+</style>
